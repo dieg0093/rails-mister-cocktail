@@ -2,7 +2,8 @@
 <h1> What is the dose of your <%= @cocktail.name %> ? </h1>
   <%= f.input :description %>
   <%= f.association :ingredient, collection: @ingredients %>
-  <%= f.button :submit %>
+  <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
 
+<%= link_to "Return to cocktails", cocktails_path, class: "btn btn-primary"%>
 
